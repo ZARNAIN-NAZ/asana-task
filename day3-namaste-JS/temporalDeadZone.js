@@ -6,4 +6,4 @@ var b=100;
 
 
 // -----------------let const different
-const a =9; //throw error of already declaring before
+// const a =9; //throw error of already declaring before
