@@ -76,9 +76,23 @@
 
 
 //DEEP ABOUT EVENT LISTENERS
-document.getElementById("clickMe")
-addEventListener('click' , function xyz(){
-// console.log("hello");
-alert("thiss")
+// let count =0;
+// document.getElementById("clickMe")
+// addEventListener('click' , function xyz(){
+// console.log("hello" , ++count);
+// alert("thiss")
 // console.log("i am running");
-})
+// })
+
+
+//make this a closure
+function attachEventListener(){
+    let count =0;
+    document.getElementById("clickMe")
+    .addEventListener('click' , function xyz(){
+    console.log("hello" , ++count);
+    // alert("thiss")
+    // console.log("i am running");
+    })
+}
+attachEventListener();
