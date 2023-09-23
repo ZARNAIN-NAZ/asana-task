@@ -59,17 +59,26 @@
 
 // setTimeOut
 //also call back function
-setTimeout(function(){
-    console.log("hi");
-} ,2000)
+// setTimeout(function(){
+//     console.log("hi");
+// } ,9000)
 
 //callBack functions
 //first class function citizens 
 // work in async manner
-function x(y){
-    console.log("x");
-    y();
-}
-x(function y(){
-console.log("y");
-});
+// function x(y){
+//     console.log("x");
+//     y();
+// }
+// x(function y(){
+// console.log("y");
+// });
+
+
+//DEEP ABOUT EVENT LISTENERS
+document.getElementById("clickMe")
+addEventListener('click' , function xyz(){
+// console.log("hello");
+alert("thiss")
+// console.log("i am running");
+})
