@@ -26,13 +26,34 @@
 
 
 // how fetch works in js
-console.log("start");
-setTimeout(function cbT()  {
-    console.log("CB set time out");
-}, 1000);
-fetch("https://api.netflix.com")
-.then(function cbF() {
-    console.log("CB netflix");
+// console.log("start");
+// setTimeout(function cbT()  {
+//     console.log("CB set time out");
+// }, 1000);
+// fetch("https://api.netflix.com")
+// .then(function cbF() {
+//     console.log("CB netflix");
     
-})
+// })
+// console.log("end");
+
+
+//trust issues with set time out ...
+console.log("start");
+
+setTimeout(function cb() {
+    console.log("call back");
+}, 5000);
+
 console.log("end");
+
+//millions of line
+let startDate = new Date().getTime()
+// console.log(startDate);
+let endDate = startDate;
+while(endDate <startDate +10000)
+{
+    endDate =new Date().getTime();
+}
+
+console.log("while expires..");
