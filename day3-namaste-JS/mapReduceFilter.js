@@ -85,11 +85,43 @@
 // },0)
 // console.log(output);
 
-const arr = [2,3,3,43,2]
-const output  = arr.reduce(function(max,curr){
-if(curr>max){
-max = curr;
+// const arr = [2,3,3,43,2]
+// const output  = arr.reduce(function(max,curr){
+// if(curr>max){
+// max = curr;
+// }
+// return max;
+// },0)
+// console.log(output);
+
+
+
+
+
+
+
+//map  reduce tricky example--------------------------------
+const users=[
+    {firstName:"ali" ,lastName:"sani", age:34},
+    {firstName:"alina" ,lastName:"khan", age:24}
+    ,{firstName:"aina" ,lastName:"baig", age:64},
+    {firstName:"almirah" ,lastName:"sheikh", age:32}
+
+]
+//list of full name of users------------>map
+// const output = users.map((x)=>x.firstName +" "+x.lastName)
+// console.log(output);
+
+
+//list of full name of users------------>reduce
+//how many users have a particular age
+const output = users.reduce(function(acc,curr){
+if(acc[curr.age]){
+    acc[curr.age]=++acc[curr.age];
+}else{
+    acc[curr.age]=1
 }
-return max;
-},0)
+return acc;
+
+},{})
 console.log(output);
