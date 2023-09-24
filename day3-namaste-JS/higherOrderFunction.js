@@ -72,9 +72,15 @@ const calculate = function(radius , logic){
     }
     return output;
 }
+
+//used map
+console.log(radius.map(area));
+
+
+
 console.log(calculate(radius,area));
-console.log(calculate(radius,circumference));
-console.log(calculate(radius,diameter));
+// console.log(calculate(radius,circumference));
+// console.log(calculate(radius,diameter));
 
 // diameter
 
