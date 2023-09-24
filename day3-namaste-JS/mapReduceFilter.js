@@ -115,13 +115,19 @@ const users=[
 
 //list of full name of users------------>reduce
 //how many users have a particular age
-const output = users.reduce(function(acc,curr){
-if(acc[curr.age]){
-    acc[curr.age]=++acc[curr.age];
-}else{
-    acc[curr.age]=1
-}
-return acc;
+// const output = users.reduce(function(acc,curr){
+// if(acc[curr.age]){
+//     acc[curr.age]=++acc[curr.age];
+// }else{
+//     acc[curr.age]=1
+// }
+// return acc;
 
-},{})
+// },{})
+// console.log(output);
+
+
+// chaining map filter reduce
+const output = users.filter((x)=>x.age>34)
+.map((x)=>x.firstName)
 console.log(output);
