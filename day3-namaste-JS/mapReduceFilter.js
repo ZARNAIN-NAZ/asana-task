@@ -34,3 +34,28 @@
 //  console.log(output);
 //  console.log(output2);
 // // console.log(output3);
+
+
+//filter----------------------------------------
+// used for filtering the value from in array
+const arr = [3,34,2,3]
+
+//filter all odd values inside an array
+// function odd(x){
+//     return x%2;
+// }
+
+// const output = arr.filter(odd)
+// console.log(output);
+
+//filter all even values inside an array
+// function even(x){
+//     return x%2===0;
+// }
+
+// const output2 = arr.filter(even)
+// console.log(output2);
+
+//x is >4
+const output = arr.filter((x)=>x>4)
+console.log(output);
