@@ -25,8 +25,11 @@
 
 
 //eg of inversioin control
-const example = ["watches", "shoes", "kurta"];
-api.createOrder(example, function () {
-  api.proceedToPayment()
+// const example = ["watches", "shoes", "kurta"];
+// api.createOrder(example, function () {
+//   api.proceedToPayment()
 
-});
+// });
+
+
+
