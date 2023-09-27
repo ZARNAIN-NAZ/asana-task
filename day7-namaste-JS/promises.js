@@ -18,11 +18,15 @@ createOrder(cart, function (orderId) {
 
 // }),
 createOrder(cart)
-  .then(function (orderId) {
-    proceedToPayment(orderId);
+//   .then(function (orderId) {
+    .then(orderId=>proceedToPayment(orderId)) //same as upper one with diff syntax  
+//    return proceedToPayment(orderId);
+//   })
+  .then(function (paymentInfo) {
+    return showOrderSummary(paymentInfo);
   })
-  .then(function (orderId) {
-    showOrderSummary(orderId);
+  .then(function (paymentInfo) {
+    return showOrderSummary(paymentInfo);
   });
 
 //fetch function
@@ -34,3 +38,7 @@ createOrder(cart)
 // user.then(function(data){
 //     console.log(data);
 // })
+
+
+//promise is an object that represents eventual completion of an async
+// operation
