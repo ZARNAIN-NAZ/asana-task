@@ -44,12 +44,21 @@
 
 // ----------------------------------part2-------------------------
 const cart = ["shoes", "watches", "pants"];
-const promise = createOrder(cart); //order
-console.log(promise);
-promise.then(function (orderId) {
+createOrder(cart)
+.then(function (orderId) {
   console.log(orderId);
+  return orderId
   //   proceedToPayment(orderId);
 })
+.catch(function (err){
+    console.log(err.meassage);
+})
+.then(function () {
+      proceedToPayment(orderId);
+  })
+  .then(function(paymentInfo){
+    console.log(paymentInfo);
+  })
 .catch(function (err){
     console.log(err.meassage);
 })
@@ -73,6 +82,14 @@ function createOrder(cart) {
     }
   });
   return pr;
+}
+
+function proceedToPayment(orderId){
+    return new Promise(
+        function(resolve ,reject){
+            resolve("payment sucussfully")
+        }
+    )
 }
 function validateCart(cart) {
   return true
