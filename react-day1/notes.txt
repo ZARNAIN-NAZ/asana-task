@@ -1,0 +1,16 @@
+for firebase steps:
+01:build project on firebase console 
+02: in cmd copy paste command in vscode folder ""npm i -g firebase-tools
+03:check  that is it succesfully installed or not by this"firebase --version"(run at administrative only)
+04:it shows version of fb
+05:now in cmd command "firebase login"
+05:"firebase init" cmnd in cmd
+06:choose simple hosting 
+07:use an existing project
+08:choose by id on fb browser  link bw project and hosting or it gives u name of existing projects u can choose it 
+09:write build on public 
+10:single page no
+11:deploy with github no
+12:dlt existing html file choose no basically chosse no in all options
+13:"firebase deploy "" run cmnd 
+

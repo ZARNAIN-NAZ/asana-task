@@ -1,0 +1,11 @@
+.myList{
+    display: flex;
+    width: 400px;
+flex-wrap: wrap;
+list-style: none;
+padding: 0;
+}
+.myList >li{
+    width: 200px;
+    border: 2px solid black;
+}
