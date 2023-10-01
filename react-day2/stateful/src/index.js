@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 const Home = () => {
   // let name = "JOHN";
-  const [isLit, setLit] = React.useState("on");
+  const [isLit, setLit] = React.useState(true);
 
   // const changeVar = () => {;
   // name = "ali";
@@ -11,20 +11,27 @@ const Home = () => {
   // console.log("name:" , name);
 
   // }
-  const changeState =()=>{
-    setLit("off")
-// console.log("changing state");
-  }
+  const changeState = () => {
+    // setLit(false)
+    // setLit(!isLit)
+    // console.log("changing state");
+  };
   return (
-    <div>
-      <p>
-        light is on{isLit} {name}
-        <button onClick={changeVar}>change variable</button>
-        <button onClick={changeState}>change state</button>
+    // <div className={(isLit)?"room lit" :"room dark"}>
+    <div className={`room ${isLit ? "lit" : "dark"}`}>
+      <p>light is {isLit ? "on" : "off"} </p>
+      {/* <button onClick={changeVar}>change variable</button> */}
+      {/* <button onClick={changeState}>change state</button> */}
+      <button
+        onClick={() => {
+          setLit(!isLit);
+        }}
+      >
+        Turn{isLit ? "off " : "on"}
+      </button>
+      {/* inline upperone */}
 
-        {/* THIS BUTTON is component & onclick is props */}
-
-      </p>
+      {/* THIS BUTTON is component & onclick is props */}
     </div>
   );
 };
