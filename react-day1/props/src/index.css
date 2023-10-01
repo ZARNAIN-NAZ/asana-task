@@ -1,0 +1,22 @@
+.myList{
+    display: flex;
+    width: 400px;
+flex-wrap: wrap;
+list-style: none;
+padding: 0;
+}
+.myList >li{
+    width: 200px;
+    border: 2px solid black;
+}
+.facebookPost{
+    text-align: center;
+    align-items: center;
+    color: rgb(8, 93, 154);
+    border: 2px solid gray;
+    margin: 0.5rem;
+    background-color: pink;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 5px saddlebrown;
+    border-radius: 15px;
+}
