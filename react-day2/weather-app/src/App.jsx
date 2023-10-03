@@ -30,7 +30,15 @@ function App() {
       //  const clone = [...data]
       //  clone.push(response.data)
 
-      setData([...data, response.data]);
+      // setData([response.data, ...data]);
+
+setData((prev)=>{
+  return [response.data,...prev]
+  
+})
+
+
+      event.target.reset();
       console.log(data);
     } catch (e) {
       setIsLoading(false);
@@ -72,7 +80,7 @@ function App() {
 
       {data.length ? (
         data.map((eachWeatherData, index) => (
-          <div>
+          <div key={index}>
             cityName:{eachWeatherData?.location?.name}{" "}
             {eachWeatherData?.location?.country}
             <br />
