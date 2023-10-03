@@ -5,6 +5,25 @@ const Home = () => {
   // let name = "JOHN";
   const [isLit, setLit] = React.useState(true);
 const [temp , setTemp] = React.useState(72)
+
+const sub=()=>{
+  //setTemp(temp-1)
+setTemp((prev)=>{
+  //logic
+  return prev-1
+})
+}
+
+const add=()=>{
+  // setTemp(temp+1)
+ setTemp((last)=>{
+  return last+1
+ })
+}
+
+
+
+
   // const changeVar = () => {;
   // name = "ali";
   // // setLit("irtiza")
@@ -29,16 +48,16 @@ const [temp , setTemp] = React.useState(72)
 
 
 
-      {/* <p>light is {isLit ? "on" : "off"} </p> */}
+      <p>light is {isLit ? "on" : "off"} </p>
       {/* <button onClick={changeVar}>change variable</button> */}
       {/* <button onClick={changeState}>change state</button> */}
-      {/* <button
+      <button
         onClick={() => {
           setLit(!isLit);
-        }} */}
-      {/* > */}
-        {/* Turn{isLit ? "off " : "on"}
-      </button> */}
+        }}
+       > 
+         Turn{isLit ? "off " : "on"}
+      </button> 
       {/* inline upperone */}
 
       {/* THIS BUTTON is component & onclick is props */}
