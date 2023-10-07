@@ -3,6 +3,12 @@ import { DogCart } from "./DogCart";
 // import { Image , DogCart } from "./DogCart"; 
 // import  DogCart  ,{Image} from "./DogCart"; //bcz DogCart is export default in DogCart file
 import Image from "./Image";
+
+import Person from "./Person";
+import { Button } from "./Person";
+import {Header} from './Person'
+import {List} from './Person'
+
 function App() {
   return (
     <div>
@@ -13,7 +19,13 @@ function App() {
      {/* <Image/> */}
      {/* <DogCart/>
      <DogCart/> */}
-    </div>
+     <Person name="zarnain" age="23"/>
+<Button text='click me' onClick={
+  ()=> {console.log("button is clicked...")}}/>
+    <Header title='welcome to my website '/>
+    <List items={["apple" , 'mango' , 'orange']}/>
+  </div>
+
   );
 }
 
