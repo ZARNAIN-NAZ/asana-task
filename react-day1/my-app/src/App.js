@@ -9,6 +9,7 @@ import { Button } from "./Person";
 import {Header} from './Person'
 import {List} from './Person'
 import Counter from "./Counter";
+import TodoList from "./Counter";
 function App() {
   return (
     <div>
@@ -24,7 +25,8 @@ function App() {
   ()=> {console.log("button is clicked...")}}/>
     <Header title='welcome to my website '/>
     <List items={["apple" , 'mango' , 'orange']}/>
-    <Counter/>
+    {/* <Counter/> */}
+    <TodoList/>
   </div>
 
   );
