@@ -22,7 +22,7 @@ import {useState} from 'react'
 //todo list
 function TodoList(){
     const [isEditing , setIsEditing] = useState(false)
-
+  const [todos , setTodos] = useState(["todo1" , "todo2"])
     return (
 //         <>
 //         {
@@ -34,6 +34,13 @@ function TodoList(){
 //         </>
 
 
+
+ <ul>
+{todos.map((todo)=> <li>{todo}</li>)}
+<button onClick={()=>setTodos([...todos,'another one'])}>click</button>
+
+
+ </ul>
 
     )
 }
