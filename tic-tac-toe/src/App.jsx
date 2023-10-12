@@ -1,12 +1,13 @@
 
 import './App.css'
-import Card from './components/Card/Card'
-
+// import Card from './components/Card/Card.jsx'
+import Grid from './components/Grid/Grid'
 function App() {
 
   return (
     <>
- <Card player='x' />
+ < Grid numberOfCards={9} />
+ 
 
     </>
   )
