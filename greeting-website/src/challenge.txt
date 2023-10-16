@@ -1,0 +1,7 @@
+1.create  react app
+2.show a heading that says hello sir , good morning ,
+if time is bw 1 to 11 am
+3.good afternooon , if 12pm to 7pm
+4.good night , if 7pm till midnight 
+5.apply css it then dynamically change the color 
+of greeting parts only using inline css style , eg , green , orange  , black etc
