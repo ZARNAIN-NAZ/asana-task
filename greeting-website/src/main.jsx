@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import ShoppingList from './App'
 
 let currDate  = new Date(2023 ,11,23,19)
 currDate = currDate.getHours();
@@ -26,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <>
 <div className='main-div'>
 <h1> Hello Sir , <span style={cssStyle}>{greeting}</span>  </h1>
-
+<ShoppingList/>
 </div>
 
 </>  )
