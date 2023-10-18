@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: rgb(206, 203, 203);
+  font-family: "Netflix Sans", Arial, sans-serif;
+
+}
+.cards{
+  display: inline-block;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    transition: transform 0.2s ease-in-out;
+
+    ;}
+    .heading_style{
+      padding: 20px 0 ;
+      text-align: center;
+      font-family: 'raleway' ,'sans-serif';
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      color: #868686;
+      background-color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+
+
+    }
+.card img {
+width: 200px;
+  height: 240px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card{
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 23px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(186, 186, 224);
+ margin-top: 40px;
+}
+.card:hover{
+cursor: pointer;
+
+  transform: scale(1.1); /* Increase the size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Change the shadow on hover */
+
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+button{
+  border: 4px solid ;
+  border-radius: 6px;
+  max-width: 100px;
+height: 50px;
+  margin-bottom: 10px;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: rgb(249, 224, 224);
+  }
