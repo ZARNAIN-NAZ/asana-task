@@ -1,21 +1,39 @@
-import { React , useState} from 'react';
+import React , {  useState} from 'react';
 
 function TodoLists (){
-    const [ ] = useState("");
+    const [ num , setNum] = useState(0);
+
+    const incNum = ()=>{
+      setNum(num+1)
+  
+    }
+    const decNum =()=>{
+      if (num>0) {
+
+        setNum(num-1)
+      }
+      else{
+        setNum(0)
+        alert('you reached a limit!')
+      }
+    }
    return(
     <>
     <div className='main_div'>
       <div className='center_div'>
 
-        <h1>
-          0
+        <div className='heading'>
+     <h1>
+        {num}
         </h1>
-        <div className='btn_div'>
-        <button >Increm</button>
-        <button>Decrem</button>
+      
         </div>
-
-      </div>
+        <div className='btn_div'>
+        <button onClick={incNum}>Increm</button>
+        <button onClick={decNum}>Decrem</button>
+        </div>
+       
+      </div> 
 
     </div>
     </>
