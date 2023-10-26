@@ -3,9 +3,9 @@ import './App.css';
 import TodoLists from './TodoLists';
 
 function App() {
-  // return (
-  //   <TodoLists/>
-  // );
+  return (
+    <TodoLists/>
+  );
 }
 
 export default App;
