@@ -1,0 +1,41 @@
+body{
+  background-color: rgb(92, 162, 92);
+}
+/* .main-div{
+  background-color: blue;
+
+
+} */
+.center-div{
+  background-color: rgb(255, 255, 255);
+    height: 23rem;
+    width: 15rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+     margin-top: 30px;
+     margin-left: 28rem;
+    text-align: center;
+}
+.heading{
+  background-color: rgb(92, 162, 92);
+  letter-spacing: 3px;
+
+}
+.btn-main{
+  border: 2px solid;
+  /* border-radius: 90px; */
+}
+.btn-main:hover{
+  background-color:rgb(20, 105, 20);
+  cursor: pointer;
+  
+}
+input{
+  width: 10rem;
+  height: 17px;
+  padding-top: 9px;
+  padding-bottom: none;
+  margin-right: 8px;
+  border: 1px solid;
+  font-weight: bold;
+}
