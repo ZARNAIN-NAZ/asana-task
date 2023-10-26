@@ -6,7 +6,7 @@ const ComList = (props)=>{
 const [line , setLine] =useState(false)
 const cutIt = ()=>{
 setLine(true)
-}}
+}
 {
     return(
 <>
@@ -18,5 +18,5 @@ setLine(true)
 </div>
 </>
     )
-}
+}}
 export default ComList

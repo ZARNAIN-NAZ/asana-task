@@ -26,8 +26,8 @@ const [value, setValue] = useState([]);
             <AddCircleIcon />
           </button>
           <ol>
-            {value.map((event) => {
-              return <ComList text={event}/>;
+            {value.map((event , index) => {
+              return <ComList key={index} text={event}/>;
             })}
           </ol>
         </div>
