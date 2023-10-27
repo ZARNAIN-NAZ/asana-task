@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MyAccordion = ({ question, answer }) => {
+const [show , setShow]=useState(false)
+
   return (
     <>
       <div className="main-heading">
-        <p>➕</p>
+      <p className="plus" onClick={()=>{
+        setShow(!show)
+      }}> {show? "  ➖" : "➕"}</p>
         <h3>{question}</h3>
+        
       </div>
-      <p>{answer}</p>
+      {
+        show && <p className="answers">{answer}</p>
+
+      }
     </>
   );
 };

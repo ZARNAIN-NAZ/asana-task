@@ -19,9 +19,15 @@ padding-left: 30px;
 padding-right: 30px;
 padding-top: 40px;
 }
-
-p{
-    background-color: rgb(255, 255, 255);
+.plus{
+    padding-right: 23rem;
+    
+}
+.plus:hover{
+    cursor: pointer;
+}
+.answers{
+    background-color: rgb(221, 223, 198);
   
 }
 h3{
